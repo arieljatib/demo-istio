@@ -34,6 +34,9 @@ Use the sliders to set weights of 70, 20, and 10 across *reviews* versions.
 
 Go ahead and try it. And remember to remove the previous `virtual-service`.
 
+### Screenshot, Grafana - `reviews.default.svc.cluster.local`
+![Grafana](screenshot-grafana.png)
+
 ### Additional References
 - *bookinfo*, https://istio.io/docs/guides/bookinfo/
 - `istioctl`, https://istio.io/docs/reference/commands/istioctl/
