@@ -1,3 +1,10 @@
+# Table of Contents
+1. Tools & Resources
+1. [Deploying *boookinfo* application](#steps)
+    1. [Routing all traffic to a single version](#route-all-traffic-to-reviews-v1)
+    1. [Canary deployment](#canary-deployment)
+    1. [Weight-based](#weighted-across-all-3-versions)
+
 # Tools & Resources
 1. Stackpoint.io
 2. Istio 0.8 on a K8s cluster, [install via Stackpoint.io web app](https://stackpoint.io/clusters/new?solution=istio). 
@@ -29,7 +36,7 @@ Normally, we could follow the [instructions here]( https://istio.io/docs/tasks/t
 
  make sure to remove the *reviews* `virutal-service` from when we routed all traffic to *reviews-v1*
 
-## Distribute load across all 3 versions
+## Weighted across all 3 versions
 Use the sliders to set weights of 70, 20, and 10 across *reviews* versions. 
 
 Go ahead and try it. And remember to remove the previous `virtual-service`.
